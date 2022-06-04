@@ -1,0 +1,47 @@
+/* NAVIGATION OPTIONS */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 4rem;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 6.2rem;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items__list {
+  display: flex;
+  gap: 4rem;
+}
+
+.item {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.4rem;
+  color: var(--medium__grey);
+}
+
+.arrow__icon {
+  padding-left: 0.5rem;
+}
+
+/* USER OPTIONS */
+.user__options {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.register {
+  display: inline-block;
+  padding: 1.3rem 2.1rem;
+  border: 1.5px solid var(--medium__grey);
+  border-radius: 14px;
+}

@@ -11,6 +11,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -26,11 +28,44 @@
     </style>
   </head>
   <body>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <!-- NAV BAR -->
+    <nav class="navbar">
+      <div class="nav__items">
+        <img src="./images/logo.svg" alt="Snap logo" class="logo" />
+        <ul class="items__list">
+          <li class="item features">
+            Features
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt="Drop down arrow for features options"
+              class="arrow__icon"
+            />
+          </li>
+          <li class="item company">
+            Company
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt="Drop down arrow for company options"
+              class="arrow__icon"
+            />
+          </li>
+          <li class="item carrers"><a href="#" class="item">Carrers</a></li>
+          <li class="item about"><a href="#" class="item">About</a></li>
+        </ul>
+      </div>
+      <div class="user__options">
+        <a href="#" class="login item">Login</a>
+        <a href="#" class="register item">Register</a>
+      </div>
+    </nav>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/DonUggioni">Renan Tiscoski</a>.
+      </div>
+    </footer>
   </body>
 </html>
