@@ -11,53 +11,131 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <!-- NAV BAR -->
-    <nav class="navbar">
-      <div class="nav__items">
-        <img src="./images/logo.svg" alt="Snap logo" class="logo" />
-        <ul class="items__list">
-          <li class="item features">
-            Features
-            <img
-              src="./images/icon-arrow-down.svg"
-              alt="Drop down arrow for features options"
-              class="arrow__icon"
-            />
-          </li>
-          <li class="item company">
-            Company
-            <img
-              src="./images/icon-arrow-down.svg"
-              alt="Drop down arrow for company options"
-              class="arrow__icon"
-            />
-          </li>
-          <li class="item carrers"><a href="#" class="item">Carrers</a></li>
-          <li class="item about"><a href="#" class="item">About</a></li>
-        </ul>
+    <header class="header">
+      <img src="./images/logo.svg" alt="Snap logo" class="logo" />
+
+      <nav class="navbar">
+        <div class="nav__items">
+          <ul class="items__list">
+            <li class="item features">
+              Features
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="Drop down arrow for features options"
+                class="arrow__icon"
+              />
+              <div class="dropdown features__dropdown">
+                <a href="#" class="dropdown__item"
+                  ><img
+                    src="./images/icon-todo.svg"
+                    alt=""
+                    class="item__icon"
+                  />Todo List</a
+                >
+                <a href="#" class="dropdown__item"
+                  ><img
+                    src="./images/icon-calendar.svg"
+                    alt=""
+                    class="item__icon"
+                  />Calendar</a
+                >
+                <a href="#" class="dropdown__item"
+                  ><img
+                    src="./images/icon-reminders.svg"
+                    alt=""
+                    class="item__icon"
+                  />Reminder</a
+                >
+                <a href="#" class="dropdown__item"
+                  ><img
+                    src="./images/icon-planning.svg"
+                    alt=""
+                    class="item__icon"
+                  />Planning</a
+                >
+              </div>
+            </li>
+
+            <li class="item company">
+              Company
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="Drop down arrow for company options"
+                class="arrow__icon"
+              />
+              <div class="dropdown company__dropdown">
+                <a href="#" class="dropdown__item">History</a>
+                <a href="#" class="dropdown__item">Our Team</a>
+                <a href="#" class="dropdown__item">Blog</a>
+              </div>
+            </li>
+
+            <li class="item carrers"><a href="#" class="item">Carrers</a></li>
+            <li class="item about"><a href="#" class="item">About</a></li>
+          </ul>
+        </div>
+        <div class="item user__options">
+          <a href="#" class="login item">Login</a>
+          <a href="#" class="register item">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main__content">
+      <div class="hero__img">
+        <img
+          src="./images/image-hero-desktop.png"
+          class="hero__img--desktop"
+          alt="Man holding a laptop"
+        />
+        <img
+          src="./images/image-hero-mobile.png"
+          class="hero__img--mobile hidden"
+          alt="Man holding a laptop"
+        />
       </div>
-      <div class="user__options">
-        <a href="#" class="login item">Login</a>
-        <a href="#" class="register item">Register</a>
+
+      <div class="description">
+        <h1 class="description__header">Make remote work</h1>
+        <p class="description__text">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <div class="btn">
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="clients">
+          <img
+            src="./images/client-databiz.svg"
+            alt="Databiz logo"
+            class="client__logo"
+          />
+          <img
+            src="./images/client-audiophile.svg"
+            alt="Audiophile logo"
+            class="client__logo"
+          />
+          <img
+            src="./images/client-meet.svg"
+            alt="Meet logo"
+            class="client__logo"
+          />
+          <img
+            src="./images/client-maker.svg"
+            alt="Maker logo"
+            class="client__logo"
+          />
+        </div>
       </div>
-    </nav>
+    </main>
 
     <footer>
       <div class="attribution">
