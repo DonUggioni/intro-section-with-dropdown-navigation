@@ -1,0 +1,25 @@
+@media (max-width: 80em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .main__content {
+    margin-left: 12.5rem;
+    gap: 4.5rem;
+  }
+}
+
+@media (max-width: 69.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  .item {
+    font-size: 1.6rem;
+  }
+
+  .main__content {
+    margin-left: 6.5rem;
+    gap: 6.5rem;
+  }
+}

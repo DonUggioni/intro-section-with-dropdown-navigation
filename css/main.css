@@ -27,7 +27,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   max-width: 144rem;
   margin-left: 16.5rem;
-  gap: 6.5rem;
+  margin-right: 1.6rem;
+  gap: 4.5rem;
 }
 
 .hero__img {
@@ -36,7 +37,7 @@ body {
 
 .hero__img--desktop {
   max-width: 48rem;
-  /* height: 64rem; */
+  width: 100%;
 }
 
 .description {
@@ -83,6 +84,10 @@ body {
   gap: 4rem;
   align-items: center;
   margin-top: 13.6rem;
+}
+
+.clients img {
+  width: 22rem;
 }
 
 .hidden {
