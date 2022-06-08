@@ -53,6 +53,10 @@
   border-radius: 14px;
 }
 
+.burger__menu {
+  display: none;
+}
+
 /* DROPDOWN MENUS */
 
 .company__dropdown {

@@ -19,25 +19,30 @@ html {
 body {
   font-family: 'Epilogue', sans-serif;
   background-color: var(--almost__white);
+  display: grid;
 }
 
 /* CONTENT DESCRIPTION */
 .main__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 144rem;
+  justify-self: center;
   margin-left: 16.5rem;
-  margin-right: 1.6rem;
-  gap: 4.5rem;
 }
 
 .hero__img {
   grid-column: 2;
+  margin-right: 3rem;
+  margin-left: 4.5rem;
 }
 
 .hero__img--desktop {
   max-width: 48rem;
   width: 100%;
+}
+
+.hero__img--mobile {
+  display: none;
 }
 
 .description {
@@ -87,12 +92,13 @@ body {
 }
 
 .clients img {
-  width: 22rem;
+  /* width: 22rem; */
+  width: 100%;
 }
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 /* Attribution */
 .attribution {
