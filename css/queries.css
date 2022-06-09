@@ -96,4 +96,67 @@
     width: 15rem;
     align-items: center;
   }
+
+  /* Navigation */
+
+  .header {
+    position: relative;
+    justify-content: space-between;
+    padding: 3.2rem 4rem 3.2rem 3.2rem;
+  }
+
+  .navbar {
+    position: absolute;
+    flex-direction: column;
+    padding: 2.4rem;
+    top: 100%;
+    right: 0;
+    background: var(--almost__white);
+    width: 24rem;
+    height: 100vh;
+    justify-content: unset;
+    align-items: flex-start;
+    gap: 3.2rem;
+    /* transform: translateY(-100%); */
+  }
+
+  .item {
+    font-size: 1.6rem;
+  }
+
+  .items__list {
+    gap: 2.4rem;
+  }
+
+  .user__options {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.6rem;
+  }
+
+  .login,
+  .register {
+    font-size: 1.4rem;
+  }
+
+  .register {
+    width: 100%;
+    text-align: center;
+  }
+
+  .items__list {
+    flex-direction: column;
+  }
+
+  .burger__menu {
+    display: block;
+  }
+
+  .menu__close {
+    display: none;
+  }
+
+  .menu__open {
+    display: block;
+  }
 }

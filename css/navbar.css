@@ -1,7 +1,7 @@
 /* NAVIGATION OPTIONS */
 .header {
   display: flex;
-  margin: 3.2rem 4rem 6.8rem 3.2rem;
+  padding: 3.2rem 4rem 6.8rem 3.2rem;
   align-items: center;
 }
 

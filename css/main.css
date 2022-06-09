@@ -25,7 +25,7 @@ body {
 /* CONTENT DESCRIPTION */
 .main__content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, max-content);
   justify-self: center;
   margin-left: 16.5rem;
 }
