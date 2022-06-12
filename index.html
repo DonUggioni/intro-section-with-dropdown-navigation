@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
+    <script
+      src="https://kit.fontawesome.com/6bde658781.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
@@ -23,68 +27,83 @@
       <img src="./images/logo.svg" alt="Snap logo" class="logo" />
 
       <nav class="navbar">
-        <div class="nav__items">
-          <ul class="items__list">
-            <li class="item features">
+        <div class="navbar__options">
+          <div class="dropdown">
+            <button class="features__btn nav__btn">
               Features
-              <img
-                src="./images/icon-arrow-down.svg"
-                alt="Drop down arrow for features options"
-                class="arrow__icon"
-              />
-              <div class="dropdown features__dropdown">
-                <a href="#" class="dropdown__item"
-                  ><img
-                    src="./images/icon-todo.svg"
-                    alt=""
-                    class="item__icon"
-                  />Todo List</a
-                >
-                <a href="#" class="dropdown__item"
-                  ><img
-                    src="./images/icon-calendar.svg"
-                    alt=""
-                    class="item__icon"
-                  />Calendar</a
-                >
-                <a href="#" class="dropdown__item"
-                  ><img
-                    src="./images/icon-reminders.svg"
-                    alt=""
-                    class="item__icon"
-                  />Reminder</a
-                >
-                <a href="#" class="dropdown__item"
-                  ><img
-                    src="./images/icon-planning.svg"
-                    alt=""
-                    class="item__icon"
-                  />Planning</a
-                >
-              </div>
-            </li>
+              <i class="fa-solid fa-angle-down arrow__icon"></i>
+            </button>
+            <div class="features__items dropdown__items">
+              <ul>
+                <li>
+                  <a href="#" class="item"
+                    ><img
+                      src="./images/icon-todo.svg"
+                      alt=""
+                      class="item__icon"
+                    />Todo List
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item"
+                    ><img
+                      src="./images/icon-calendar.svg"
+                      alt=""
+                      class="item__icon"
+                    />Calendar
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item"
+                    ><img
+                      src="./images/icon-reminders.svg"
+                      alt=""
+                      class="item__icon"
+                    />Reminders
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item"
+                    ><img
+                      src="./images/icon-planning.svg"
+                      alt=""
+                      class="item__icon"
+                    />Planning
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-            <li class="item company">
+          <div class="dropdown">
+            <button class="company__btn nav__btn">
               Company
-              <img
-                src="./images/icon-arrow-down.svg"
-                alt="Drop down arrow for company options"
-                class="arrow__icon"
-              />
-              <div class="dropdown company__dropdown">
-                <a href="#" class="dropdown__item">History</a>
-                <a href="#" class="dropdown__item">Our Team</a>
-                <a href="#" class="dropdown__item">Blog</a>
-              </div>
-            </li>
+              <i class="fa-solid fa-angle-down arrow__icon"></i>
+            </button>
+            <div class="company__items dropdown__items">
+              <ul>
+                <li><a href="#" class="item">History</a></li>
+                <li><a href="#" class="item">Our Team</a></li>
+                <li><a href="#" class="item">Blog</a></li>
+              </ul>
+            </div>
+          </div>
 
-            <li class="item carrers"><a href="#" class="item">Carrers</a></li>
-            <li class="item about"><a href="#" class="item">About</a></li>
-          </ul>
+          <button class="carrers nav__btn">
+            <a href="#" class="item">Carrers</a>
+          </button>
+          <button class="about nav__btn">
+            <a href="#" class="item">About</a>
+          </button>
         </div>
-        <div class="item user__options">
-          <a href="#" class="login item">Login</a>
-          <a href="#" class="register item">Register</a>
+
+        <div class="user__options">
+          <button class="nav__btn">
+            <a href="#" class="login item">Login</a>
+          </button>
+          <button class="nav__btn">
+            <a href="#" class="register item">Register</a>
+          </button>
         </div>
       </nav>
       <img

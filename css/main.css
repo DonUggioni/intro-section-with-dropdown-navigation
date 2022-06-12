@@ -20,6 +20,7 @@ body {
   font-family: 'Epilogue', sans-serif;
   background-color: var(--almost__white);
   display: grid;
+  overflow-x: hidden;
 }
 
 /* CONTENT DESCRIPTION */
