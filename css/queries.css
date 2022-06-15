@@ -138,13 +138,14 @@
 
   .dropdown {
     position: unset;
-    /* overflow: hidden; */
+    overflow: hidden;
+    height: fit-content;
   }
 
   .company__items {
     position: unset;
-    opacity: 1;
-    /* transform: translateY(-100%); */
+    /* opacity: 0;
+    margin-top: -120%; */
 
     background: transparent;
     box-shadow: none;
