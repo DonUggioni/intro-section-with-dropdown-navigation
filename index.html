@@ -24,148 +24,75 @@
   <body>
     <!-- NAV BAR -->
     <header class="header">
-      <img src="./images/logo.svg" alt="Snap logo" class="logo" />
+      <div class="nav__container">
+        <img src="./images/logo.svg" alt="Snap logo" class="logo" />
+        <nav class="nav">
+          <ul class="links">
+            <li class="dropdown dropdown__features">
+              <span class="drop__down-btn"
+                >Features <i class="fa-solid fa-angle-down arrow__icon"></i
+              ></span>
 
-      <nav class="navbar">
-        <div class="navbar__options">
-          <div class="dropdown">
-            <button class="features__btn nav__btn">
-              Features
-              <i class="fa-solid fa-angle-down arrow__icon"></i>
-            </button>
-            <div class="features__items dropdown__items">
-              <ul>
+              <ul class="dropdown__links features__links">
                 <li>
-                  <a href="#" class="item"
-                    ><img
-                      src="./images/icon-todo.svg"
-                      alt=""
-                      class="item__icon"
-                    />Todo List
-                  </a>
+                  <img
+                    src="./images/icon-todo.svg"
+                    alt="Todo icon"
+                    class="icon"
+                  /><a href="#" class="link">Todo List</a>
                 </li>
-                <li>
-                  <a href="#" class="item"
-                    ><img
-                      src="./images/icon-calendar.svg"
-                      alt=""
-                      class="item__icon"
-                    />Calendar
-                  </a>
+                <li class="dropdown__link">
+                  <img
+                    src="./images/icon-calendar.svg"
+                    alt="Calendar icon"
+                    class="icon"
+                  /><a href="#" class="link">Calendar</a>
                 </li>
-                <li>
-                  <a href="#" class="item"
-                    ><img
-                      src="./images/icon-reminders.svg"
-                      alt=""
-                      class="item__icon"
-                    />Reminders
-                  </a>
+                <li class="dropdown__link">
+                  <img
+                    src="./images/icon-reminders.svg"
+                    alt="Reminders icon"
+                    class="icon"
+                  /><a href="#" class="link">Reminders</a>
                 </li>
-                <li>
-                  <a href="#" class="item"
-                    ><img
-                      src="./images/icon-planning.svg"
-                      alt=""
-                      class="item__icon"
-                    />Planning
-                  </a>
+                <li class="dropdown__link">
+                  <img
+                    src="./images/icon-planning.svg"
+                    alt="Planning icon"
+                    class="icon"
+                  /><a href="#" class="link">Planning</a>
                 </li>
               </ul>
-            </div>
-          </div>
+            </li>
+            <li class="dropdown dropdown__company">
+              <span class="drop__down-btn"
+                >Company <i class="fa-solid fa-angle-down arrow__icon"></i
+              ></span>
 
-          <div class="dropdown">
-            <button class="company__btn nav__btn">
-              Company
-              <i class="fa-solid fa-angle-down arrow__icon"></i>
-            </button>
-            <div class="company__items dropdown__items">
-              <ul>
-                <li><a href="#" class="item">History</a></li>
-                <li><a href="#" class="item">Our Team</a></li>
-                <li><a href="#" class="item">Blog</a></li>
+              <ul class="dropdown__links company__links">
+                <li class="dropdown__link">
+                  <a href="#" class="link">History</a>
+                </li>
+                <li class="dropdown__link">
+                  <a href="#" class="link">Our Team</a>
+                </li>
+                <li class="dropdown__link">
+                  <a href="#" class="link">Blog</a>
+                </li>
               </ul>
-            </div>
-          </div>
-
-          <button class="carrers nav__btn">
-            <a href="#" class="item">Carrers</a>
-          </button>
-          <button class="about nav__btn">
-            <a href="#" class="item">About</a>
-          </button>
-        </div>
-
-        <div class="user__options">
-          <button class="nav__btn">
-            <a href="#" class="login item">Login</a>
-          </button>
-          <button class="nav__btn">
-            <a href="#" class="register item">Register</a>
-          </button>
-        </div>
-      </nav>
-      <img
-        src="./images/icon-menu.svg"
-        alt="Mobile menu icon"
-        class="burger__menu menu__close"
-      />
-      <img
-        src="./images/icon-close-menu.svg"
-        alt="Close menu button"
-        class="close__menu--icon"
-      />
+            </li>
+            <li><a href="#" class="link">Carrers</a></li>
+            <li><a href="#" class="link">About</a></li>
+          </ul>
+          <ul class="user__actions">
+            <li class="login"><a href="#" class="link">Login</a></li>
+            <li class="login">
+              <a href="#" class="link register__btn">Register</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-    <main class="main__content">
-      <div class="hero__img">
-        <img
-          src="./images/image-hero-desktop.png"
-          class="hero__img--desktop"
-          alt="Man holding a laptop"
-        />
-        <img
-          src="./images/image-hero-mobile.png"
-          class="hero__img--mobile"
-          alt="Man holding a laptop"
-        />
-      </div>
-
-      <div class="description">
-        <h1 class="description__header">Make remote work</h1>
-        <p class="description__text">
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <div class="btn">
-          <a href="#">Learn More</a>
-        </div>
-
-        <div class="clients">
-          <img
-            src="./images/client-databiz.svg"
-            alt="Databiz logo"
-            class="client__logo"
-          />
-          <img
-            src="./images/client-audiophile.svg"
-            alt="Audiophile logo"
-            class="client__logo"
-          />
-          <img
-            src="./images/client-meet.svg"
-            alt="Meet logo"
-            class="client__logo"
-          />
-          <img
-            src="./images/client-maker.svg"
-            alt="Maker logo"
-            class="client__logo"
-          />
-        </div>
-      </div>
-    </main>
 
     <footer>
       <div class="attribution">
