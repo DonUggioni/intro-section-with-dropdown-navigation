@@ -38,7 +38,7 @@
 }
 
 .arrow__icon {
-  margin-left: 0.5rem;
+  margin-left: 0.8rem;
   font-size: 1.2rem;
 }
 
@@ -87,4 +87,12 @@
 
 .register__btn:hover {
   border-color: var(--almost__black);
+}
+
+.mobile__menu--active {
+  display: block;
+}
+
+.mobile__menu--hidden {
+  display: none;
 }

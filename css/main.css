@@ -28,6 +28,92 @@ a {
   text-decoration: none;
 }
 
+/* Header */
+.header {
+  height: 100vh;
+}
+
+.content__container {
+  display: flex;
+  gap: 3rem;
+  padding: 6.5rem 13rem 13rem;
+  max-width: 155rem;
+}
+
+.header__content {
+  width: 54rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.header__title {
+  font-size: 8rem;
+  color: var(--almost__black);
+  margin-bottom: 4.8rem;
+}
+
+.header__text {
+  font-size: 1.8rem;
+  color: var(--medium__grey);
+  line-height: 1.6;
+  padding-right: 10rem;
+  margin-bottom: 5.8rem;
+}
+
+/* Learn more button */
+
+.learn-more__btn {
+  margin-bottom: 13rem;
+}
+
+.learn-more__link {
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: var(--almost__white);
+
+  padding: 1.8rem 3rem;
+  background-color: var(--almost__black);
+
+  border: 1.5px solid var(--almost__black);
+  border-radius: 14px;
+  transition: all 0.1s;
+}
+
+.learn-more__link:hover {
+  background-color: var(--almost__white);
+  color: var(--almost__black);
+}
+
+/* Clients logos */
+
+.clients__logos {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.client__logo {
+  width: 100%;
+  max-width: 8.5rem;
+}
+
+/* Hero image */
+
+.hero__imgs {
+  margin-left: auto;
+}
+
+.hero__img-desktop {
+  max-width: 48rem;
+  width: 100%;
+}
+
+.hero__img--hidden {
+  display: none;
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;
