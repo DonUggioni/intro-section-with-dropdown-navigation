@@ -40,6 +40,11 @@
 .arrow__icon {
   margin-left: 0.8rem;
   font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.arrow__icon--open {
+  transform: rotate(-180deg);
 }
 
 .dropdown__links {
@@ -48,10 +53,10 @@
   flex-direction: column;
   gap: 1.4rem;
 
-  padding: 2.4rem;
+  padding: 2rem 2.4rem;
 
   background: #ffffff;
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.149126);
+  box-shadow: 0px 1rem 4rem rgba(0, 0, 0, 0.149126);
   border-radius: 10px;
 
   opacity: 0;
@@ -67,7 +72,7 @@
 }
 
 .features__links {
-  width: 16rem;
+  width: 15.5rem;
   right: 0;
 }
 
