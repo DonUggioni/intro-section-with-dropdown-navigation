@@ -38,6 +38,7 @@ a {
   gap: 3rem;
   padding: 6.5rem 13rem 13rem;
   max-width: 155rem;
+  margin: 0 auto;
 }
 
 .header__content {

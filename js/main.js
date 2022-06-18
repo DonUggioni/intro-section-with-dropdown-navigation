@@ -7,9 +7,14 @@ const arrowIcons = document.querySelectorAll('.arrow__icon');
 
 navLinks.addEventListener('click', function (e) {
   const clicked = e.target.closest('.dropdown');
-  const dropdownLinks = clicked.querySelector('.dropdown__links');
-  const arrowIcon = clicked.querySelector('.arrow__icon');
 
-  dropdownLinks.classList.toggle('dropdown__links--visible');
-  arrowIcon.classList.toggle('arrow__icon--open');
+  dropdownLinksElements.forEach((el) =>
+    el.classList.remove('dropdown__links--visible')
+  );
+
+  const dropdownLinks = clicked
+    .querySelectorAll('.dropdown__links')
+    .forEach((el) => {
+      el.classList.toggle('dropdown__links--visible');
+    });
 });
