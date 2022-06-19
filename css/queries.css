@@ -62,9 +62,9 @@
     width: 36rem;
   }
 
-  .mobile__menu--active {
+  /* .mobile__menu--open {
     display: block;
-  }
+  } */
 
   .nav__container {
     position: relative;
@@ -87,7 +87,12 @@
     right: 0;
     z-index: 1;
 
-    transform: translateY(100%);
+    transform: translateX(100%);
+    transition: all 0.2s linear;
+  }
+
+  .nav--visible {
+    transform: translateX(0);
   }
 
   .dropdown {

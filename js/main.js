@@ -4,6 +4,9 @@ const dropdowns = document.querySelectorAll('.dropdown');
 const dropdownLinksElements = document.querySelectorAll('.dropdown__links');
 const navLinks = document.querySelector('.links');
 const arrowIcons = document.querySelectorAll('.arrow__icon');
+const menuOpen = document.querySelector('.mobile__menu-open');
+const menuClose = document.querySelector('.mobile__menu-close');
+const mobileMenuBtn = document.querySelectorAll('.mobile__menu');
 
 const removeClass = function (par, cont, el, cl) {
   par.addEventListener('click', (e) => {
@@ -45,3 +48,20 @@ navLinks.addEventListener('click', function (e) {
     .querySelector('.arrow__icon')
     .classList.toggle('arrow__icon--open');
 });
+
+// Mobile menu
+window.addEventListener('resize', function () {
+  if (this.window.innerWidth <= 880) {
+    menuOpen.classList.remove('mobile__menu--hidden');
+    menuOpen.classList.add('mobile__menu--visible');
+  } else {
+    menuOpen.classList.add('mobile__menu--hidden');
+    illustrationMobile.classList.remove('mobile__menu--visible');
+  }
+});
+
+// mobileMenuBtn.forEach((e) => {
+//   e.addEventListener('click', function () {
+//     menuOpen.classList.toggle('mobile__menu--hidden');
+//   });
+// });

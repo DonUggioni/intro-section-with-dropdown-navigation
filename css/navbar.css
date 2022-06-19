@@ -96,7 +96,6 @@
 
 .mobile__menu {
   cursor: pointer;
-  display: none;
 }
 
 .mobile__menu--active {
