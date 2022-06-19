@@ -94,6 +94,11 @@
   border-color: var(--almost__black);
 }
 
+.mobile__menu {
+  cursor: pointer;
+  display: none;
+}
+
 .mobile__menu--active {
   display: block;
 }

@@ -19,6 +19,7 @@ html {
 body {
   font-family: 'Epilogue', sans-serif;
   background-color: var(--almost__white);
+  overflow-y: hidden;
 }
 
 ul,
@@ -104,6 +105,7 @@ a {
 
 .hero__imgs {
   margin-left: auto;
+  width: 48rem;
 }
 
 .hero__img-desktop {
