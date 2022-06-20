@@ -6,7 +6,8 @@ const navLinks = document.querySelector('.links');
 const arrowIcons = document.querySelectorAll('.arrow__icon');
 const menuOpen = document.querySelector('.mobile__menu-open');
 const menuClose = document.querySelector('.mobile__menu-close');
-const mobileMenuBtn = document.querySelectorAll('.mobile__menu');
+const navBar = document.querySelector('.nav');
+const overlay = document.querySelector('.overlay');
 
 const removeClass = function (par, cont, el, cl) {
   par.addEventListener('click', (e) => {
@@ -21,6 +22,23 @@ const removeClass = function (par, cont, el, cl) {
   });
 };
 
+const mobileMenuOpen = function () {
+  menuOpen.classList.add('mobile__menu--hidden');
+  menuClose.classList.remove('mobile__menu--hidden');
+  menuClose.classList.add('mobile__menu--active');
+  navBar.classList.add('nav--visible');
+  overlay.classList.add('overlay--active');
+};
+
+const mobileMenuClose = function () {
+  menuOpen.classList.remove('mobile__menu--hidden');
+  menuClose.classList.remove('mobile__menu--active');
+  menuClose.classList.add('mobile__menu--hidden');
+  navBar.classList.remove('nav--visible');
+  overlay.classList.remove('overlay--active');
+};
+
+// Dropdown menus functionality
 dropdowns.forEach((dropdown) =>
   removeClass(
     dropdown,
@@ -49,7 +67,7 @@ navLinks.addEventListener('click', function (e) {
     .classList.toggle('arrow__icon--open');
 });
 
-// Mobile menu
+// Mobile menu icon
 window.addEventListener('resize', function () {
   if (this.window.innerWidth <= 880) {
     menuOpen.classList.remove('mobile__menu--hidden');
@@ -58,10 +76,25 @@ window.addEventListener('resize', function () {
     menuOpen.classList.add('mobile__menu--hidden');
     illustrationMobile.classList.remove('mobile__menu--visible');
   }
+
+  if (this.window.innerWidth >= 880) {
+    mobileMenuClose();
+  }
 });
 
-// mobileMenuBtn.forEach((e) => {
-//   e.addEventListener('click', function () {
-//     menuOpen.classList.toggle('mobile__menu--hidden');
-//   });
-// });
+// Checks for window size on load
+window.addEventListener('load', function () {
+  if (this.window.innerWidth <= 880) {
+    menuOpen.classList.remove('mobile__menu--hidden');
+    menuOpen.classList.add('mobile__menu--visible');
+  } else {
+    menuOpen.classList.add('mobile__menu--hidden');
+    menuOpen.classList.remove('mobile__menu--visible');
+  }
+});
+
+// Opens mobile menu
+menuOpen.addEventListener('click', mobileMenuOpen);
+
+// Closes mobile menu
+menuClose.addEventListener('click', mobileMenuClose);
