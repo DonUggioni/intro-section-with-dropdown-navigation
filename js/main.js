@@ -38,6 +38,14 @@ const mobileMenuClose = function () {
   overlay.classList.remove('overlay--active');
 };
 
+const closeMobileMenuOnScreenResize = function () {
+  menuOpen.classList.add('mobile__menu--hidden');
+  // menuClose.classList.remove('mobile__menu--active');
+  menuClose.classList.add('mobile__menu--hidden');
+  navBar.classList.remove('nav--visible');
+  overlay.classList.remove('overlay--active');
+};
+
 // Dropdown menus functionality
 dropdowns.forEach((dropdown) =>
   removeClass(
@@ -74,11 +82,11 @@ window.addEventListener('resize', function () {
     menuOpen.classList.add('mobile__menu--visible');
   } else {
     menuOpen.classList.add('mobile__menu--hidden');
-    illustrationMobile.classList.remove('mobile__menu--visible');
+    menuOpen.classList.remove('mobile__menu--visible');
   }
 
   if (this.window.innerWidth >= 880) {
-    mobileMenuClose();
+    closeMobileMenuOnScreenResize();
   }
 });
 
